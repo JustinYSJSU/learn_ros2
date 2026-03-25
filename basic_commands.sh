@@ -1,3 +1,6 @@
+# change file to executable
+chmod +x <file_name>
+
 # create new ros2 package
 ros2 pkg create <name> --build-type ament_cmake
 
@@ -25,3 +28,6 @@ ros2 param describe /<node> <param_name>
 
 # change / set param value
 ros2 param set /<node> <param_name>
+
+# run launch file (make sure scripts & launch file are executables)
+ros2 launch <package_name> <launch_file.launch.py>
