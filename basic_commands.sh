@@ -31,3 +31,12 @@ ros2 param set /<node> <param_name>
 
 # run launch file (make sure scripts & launch file are executables)
 ros2 launch <package_name> <launch_file.launch.py>
+
+# view all interfaces
+ros2 interface list
+
+# run client node
+ros2 run <package_name> client_file.py
+
+# run server node
+ros2 run <package_name> server_file.py
