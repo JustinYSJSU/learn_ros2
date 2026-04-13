@@ -40,3 +40,12 @@ ros2 run <package_name> client_file.py
 
 # run server node
 ros2 run <package_name> server_file.py
+
+# record ros2 bag (all topics) with output name
+ros2 bag record -a -o test.bag
+
+# record ros2 bag (specific topic)
+ros2 bag record /<name>
+
+# playback .bag file
+ros2 bag play <name>
