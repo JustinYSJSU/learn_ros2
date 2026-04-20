@@ -49,3 +49,6 @@ ros2 bag record /<name>
 
 # playback .bag file
 ros2 bag play <name>
+
+# generate .sdf file in gazebo simulator
+LIBGL_ALWAYS_SOFTWARE=1 ign gazebo -v 4 -r <name>
